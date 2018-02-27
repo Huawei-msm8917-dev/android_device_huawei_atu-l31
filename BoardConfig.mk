@@ -67,6 +67,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8917
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-07-01
 
