@@ -55,3 +55,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8917
+
+# SEPolicy
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
