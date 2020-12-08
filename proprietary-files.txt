@@ -2565,12 +2565,6 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libtinyxml2_1.so
 
-# Health
-vendor/bin/hw/android.hardware.health@1.0-service
-vendor/etc/init/android.hardware.health@1.0-service.rc
-vendor/lib/hw/android.hardware.health@1.0-impl.so
-vendor/lib64/hw/android.hardware.health@1.0-impl.so
-
 # Keymaster
 vendor/lib/hw/keystore.msm8937.so
 vendor/lib/libkeymasterdeviceutils.so
