@@ -2537,8 +2537,6 @@ vendor/lib64/hw/keystore.msm8937.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8937.so
@@ -3025,23 +3023,6 @@ vendor/lib64/libwfdhaldsmanager.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/libwfdmmservice.so
 vendor/lib64/libwfdmodulehdcpsession.so
-
-# WiFi
-bin/iwpriv
-vendor/bin/cnss-daemon
-vendor/bin/fstman
-vendor/bin/hw/android.hardware.wifi@1.0-service
-vendor/bin/hw/vendor.huawei.hardware.wifi@1.1-service
-vendor/bin/iwpriv
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
-vendor/etc/init/vendor.huawei.hardware.wifi@1.1-service.rc
-vendor/lib/vendor.huawei.hardware.wifi.supplicant@1.0.so
-vendor/lib/vendor.huawei.hardware.wifi@1.0.so
-vendor/lib/vendor.huawei.hardware.wifi@1.1.so
-vendor/lib64/hw/vendor.huawei.hardware.wifi@1.1-impl.so
-vendor/lib64/vendor.huawei.hardware.wifi.supplicant@1.0.so
-vendor/lib64/vendor.huawei.hardware.wifi@1.0.so
-vendor/lib64/vendor.huawei.hardware.wifi@1.1.so
 
 # Misc
 vendor/bin/aptouch_daemon
