@@ -2269,59 +2269,25 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 # DTS
 vendor/lib/libomx-dts.so
 
-# Display-Hardware
+# Display (Hardware)
 lib/libsdm-disp-apis.so
 lib64/libsdm-disp-apis.so
-vendor/bin/hw/android.hardware.graphics.allocator@2.0-service
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/bin/hw/android.hardware.memtrack@1.0-service
-vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
-vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so
-vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
-vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/gralloc.msm8937.so
-vendor/lib/hw/hwcomposer.msm8937.so
-vendor/lib/hw/memtrack.msm8937.so
-vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
 vendor/lib/libgpu_tonemapper.so
 vendor/lib/libgrallocutils.so
-vendor/lib/libqdMetaData.so
 vendor/lib/libqdutils.so
 vendor/lib/libqservice.so
 vendor/lib/libsdmcore.so
 vendor/lib/libsdmextension.so
 vendor/lib/libsdmutils.so
-vendor/lib/vendor.display.config@1.0_vendor.so
-vendor/lib/vendor.huawei.hardware.graphics.displayeffect@1.0.so
-vendor/lib/vendor.huawei.hardware.graphics.gpucommon@1.0.so
-vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.0.so
-vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so
-vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
-vendor/lib64/hw/gralloc.default.so
-vendor/lib64/hw/gralloc.msm8937.so
-vendor/lib64/hw/hwcomposer.msm8937.so
-vendor/lib64/hw/memtrack.msm8937.so
-vendor/lib64/libdrm.so
 vendor/lib64/libdrmutils.so
 vendor/lib64/libgpu_tonemapper.so
 vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdMetaData.so
 vendor/lib64/libqdutils.so
 vendor/lib64/libqservice.so
 vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
-vendor/lib64/vendor.display.config@1.0_vendor.so
-vendor/lib64/vendor.huawei.hardware.graphics.displayeffect@1.0.so
-vendor/lib64/vendor.huawei.hardware.graphics.gpucommon@1.0.so
-vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.0.so
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_DJN_ILI9881C_5P7_VIDEO_CPT_720_x_1440.xml
