@@ -5,6 +5,25 @@
 #
 
 # Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl
+
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.primary.msm8937 \
+    audio.r_submix.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
+    libaudiopreprocessing \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(LOCAL_PATH)/configs/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
