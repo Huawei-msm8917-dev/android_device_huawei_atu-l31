@@ -117,8 +117,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 VENDOR_SECURITY_PATCH := 2018-07-01
 
 # SEPolicy
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+#BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_minimal
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
