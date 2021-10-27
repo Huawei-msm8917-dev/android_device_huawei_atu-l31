@@ -9,7 +9,7 @@
 /dev/block/bootdevice/by-name/log        /log        vfat    nosuid,nodev,noatime,uid=0,gid=1000,fmask=0002,dmask=0002         wait,check,continue
 /dev/block/bootdevice/by-name/odm      /odm      ext4    ro,nosuid,nodev,barrier=1                              wait,check,continue
 /dev/block/bootdevice/by-name/system         /system      ext4    ro,barrier=1                                wait,continue
-/dev/block/bootdevice/by-name/vendor         /vendor      ext4    ro,barrier=1                               wait,verify,continue
+/dev/block/bootdevice/by-name/vendor         /vendor      squashfs    ro,barrier=1                               wait,verify,continue
 /dev/block/bootdevice/by-name/product        /product     ext4    ro,barrier=1                               wait,verify,continue
 /dev/block/bootdevice/by-name/version        /version     ext4    ro,barrier=1                               wait,verify,continue
 /dev/block/bootdevice/by-name/userdata       /data        f2fs    nosuid,nodev,noatime,discard,inline_data,inline_xattr     wait,check,fileencryption=aes-256-xts:aes-256-cts
