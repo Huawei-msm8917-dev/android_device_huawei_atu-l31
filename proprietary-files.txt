@@ -3022,17 +3022,6 @@ vendor/lib/libUBWC.so
 vendor/lib64/libstreamparser.so
 vendor/lib64/libUBWC.so
 
-# Vibrator
-vendor/bin/hw/vendor.huawei.hardware.hwvibrator@1.0-service
-vendor/etc/init/vendor.huawei.hardware.hwvibrator@1.0-service.rc
-vendor/lib/hw/vibrator.default.so
-vendor/lib/lib_vibrator.so
-vendor/lib/vendor.huawei.hardware.hwvibrator@1.0.so
-vendor/lib64/hw/vendor.huawei.hardware.hwvibrator@1.0-impl.so
-vendor/lib64/hw/vibrator.default.so
-vendor/lib64/lib_vibrator.so
-vendor/lib64/vendor.huawei.hardware.hwvibrator@1.0.so
-
 # Voice
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
