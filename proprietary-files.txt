@@ -2728,20 +2728,9 @@ vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0_vendor.so
 vendor/lib64/vendor.display.postproc@1.0_vendor.so
 
-# Power-Hardware
-vendor/bin/hw/android.hardware.power@1.0-service
-vendor/bin/hw/vendor.huawei.hardware.power@1.0-service
-vendor/etc/init/android.hardware.power@1.0-service.rc
-vendor/etc/init/vendor.huawei.hardware.power@1.0-service.rc
-vendor/lib/hw/android.hardware.power@1.0-impl.so
-vendor/lib/hw/power.default.so
+# Power (Hardware)
 vendor/lib/hw/power.qcom.so
-vendor/lib/vendor.huawei.hardware.power@1.0.so
-vendor/lib64/hw/android.hardware.power@1.0-impl.so
-vendor/lib64/hw/power.default.so
 vendor/lib64/hw/power.qcom.so
-vendor/lib64/hw/vendor.huawei.hardware.power@1.0-impl.so
-vendor/lib64/vendor.huawei.hardware.power@1.0.so
 
 # QMI
 etc/permissions/qti_libpermissions.xml
