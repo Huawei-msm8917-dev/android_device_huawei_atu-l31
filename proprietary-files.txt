@@ -2933,13 +2933,11 @@ vendor/lib64/libproprietary_subsystem_ramdump.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/libsubsystem_control.so
 
-# Sensor-configs
+# Sensor (Configs)
 vendor/etc/sensors/sensor_def_qcomdev.conf
 
 # Sensors
-vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
 vendor/bin/sensors.qcom
-vendor/etc/init/vendor.huawei.hardware.sensors@1.0-service.rc
 vendor/lib/hw/activity_recognition.msm8937.so
 vendor/lib/hw/sensors.msm8937_64.so
 vendor/lib/libcalmodule_common.so
@@ -2947,17 +2945,14 @@ vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/sensors.ssc.so
 vendor/lib/sensor_calibrate.so
-vendor/lib/vendor.huawei.hardware.sensors@1.0.so
 vendor/lib64/hw/activity_recognition.msm8937.so
 vendor/lib64/hw/sensors.msm8937_64.so
-vendor/lib64/hw/vendor.huawei.hardware.sensors@1.0-impl.so
 vendor/lib64/libcalmodule_common.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensors.huawei.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensor_calibrate.so
-vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
 
 # Thermal
 vendor/bin/thermal-engine
@@ -4397,4 +4392,3 @@ vendor/lib64/vendor.huawei.hardware.modemlogcat@1.0.so
 vendor/lib64/vendor.huawei.hardware.otherdevices@1.0.so
 vendor/lib64/vendor.huawei.hardware.teecdaemon@1.0.so
 vendor/lib64/vendor.huawei.hardware.tp@1.0.so
-vendor/[SYS]/Journal
