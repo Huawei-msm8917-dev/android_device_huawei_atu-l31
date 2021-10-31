@@ -67,6 +67,9 @@ on init
     write /sys/fs/cgroup/memory/bg/memory.move_charge_at_immigrate 1
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
     # add for zrhung huawei_hung_task
     write /proc/sys/kernel/hung_task_panic 1
@@ -76,6 +79,9 @@ on init
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -97,6 +103,9 @@ on early-boot
     chown system system /persist/sensors/sensors_settings
     chown system system /persist/sensors/registry/config
     chmod 0664 /persist/sensors/sensors_settings
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
     chown system system /mnt/vendor/persist/sensors
     chown system system /mnt/vendor/persist/sensors/sns.reg
@@ -1071,3 +1080,36 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
+
+# Logcat Services
+service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_crash /system/bin/logcat -b crash -D -f /cache/boot_log_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+on post-fs-data
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
+on property:sys.boot_completed=1
+# Stop the logger service
+    stop boot_log
+    stop boot_log_crash
+    stop boot_log_kernel 
